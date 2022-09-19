@@ -1,0 +1,57 @@
+.mantine-uquezq {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  width: 85px;
+}
+
+.dropdown .dropdown__text {
+  width: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.dropdown .dropdown__text .text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c6c6c6;
+}
+
+.dropdown .dropdown__text .dropdown__icon-down {
+  position: absolute;
+  top: -7px;
+  right: 5px;
+}
+
+.dropdown .dropdown__items {
+  width: 85px;
+  position: absolute;
+  background: #212121;
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+  border: 1px solid #49495a;
+  border-top: none;
+}
+
+.dropdown .dropdown__items .dropdown__item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c6c6c6;
+  text-transform: capitalize;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

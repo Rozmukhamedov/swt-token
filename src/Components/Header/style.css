@@ -1,0 +1,141 @@
+.header {
+  background: #212121;
+  border-bottom: 1px solid #49495a;
+}
+
+.header .header__flex {
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__flex .header__logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .header__flex .header__logo img {
+  margin-left: 5px;
+}
+
+.header .header__flex .header__menu {
+  display: flex;
+  flex-direction: flex;
+}
+
+.header .header__flex .header__menu li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c6c6c6;
+  list-style: none;
+  text-transform: capitalize;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.header .header__flex .header__menu li:hover {
+  color: #408be5;
+}
+
+.header__mobile {
+  display: none;
+  background: #212121;
+  border-bottom: 1px solid #49495a;
+}
+
+.header__mobile .header__flex {
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__mobile .header__flex .header__logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__mobile .header__flex .header__logo img {
+  margin-left: 5px;
+}
+
+.header__mobile .header__flex button {
+  background: none;
+  border: none;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__logo img {
+  margin-left: 5px;
+}
+
+.mantine-Drawer-root .header__menu-drawer {
+  margin-top: 60px;
+  margin-bottom: 100%;
+}
+
+.header__menu-drawer li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #ffffff;
+  list-style: none;
+  text-transform: capitalize;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.header__menu-drawer li:hover {
+  color: #408be5;
+}
+
+.header__menu-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.header__menu-footer::before {
+  content: "";
+  top: 0;
+  left: -25px;
+  width: 115%;
+  height: 1px;
+  position: absolute;
+  border-top: 1px solid #9a9aab;
+}
+
+@media (max-width: 720px) {
+  .header {
+    display: none;
+  }
+  .header__mobile {
+    display: block;
+  }
+}
+
+.mantine-Paper-root {
+  background: #212121;
+}
+
+.mantine-UnstyledButton-root svg {
+  width: 22px;
+  height: 22px;
+}
+.mantine-UnstyledButton-root svg path {
+  fill: #ffffff;
+}

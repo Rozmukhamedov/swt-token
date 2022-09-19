@@ -1,0 +1,146 @@
+.ecosystem {
+  background: #212121;
+  padding-bottom: 100px;
+}
+
+.ecosystem .ecosystem__texts h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ecosystem .ecosystem__texts p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+  color: #c6c6c6;
+}
+
+.ecosystem .ecosystem__card-first h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.ecosystem .ecosystem__card-first p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #c6c6c6;
+  margin-bottom: 16px;
+}
+
+.ecosystem .ecosystem__card-first a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #6ca6ed;
+  text-decoration: none;
+}
+
+.ecosystem .ecosystem__card-first a:hover {
+  color: #6ca6ed;
+}
+
+.ecosystem .ecosystem__card-first .img-1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ecosystem .ecosystem__card-second h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.ecosystem .ecosystem__card-second p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #c6c6c6;
+  margin-bottom: 16px;
+}
+
+.ecosystem .ecosystem__card-second a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #6ca6ed;
+  text-decoration: none;
+}
+
+.ecosystem .ecosystem__card-second a:hover {
+  color: #6ca6ed;
+}
+
+.ecosystem .ecosystem__card-second .img-1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ecosystem .ecosystem__card-third h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.ecosystem .ecosystem__card-third p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #c6c6c6;
+  margin-bottom: 16px;
+}
+
+.ecosystem .ecosystem__card-third a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #6ca6ed;
+  text-decoration: none;
+}
+
+.ecosystem .ecosystem__card-third a:hover {
+  color: #6ca6ed;
+}
+
+.ecosystem .ecosystem__card-third .img-1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
