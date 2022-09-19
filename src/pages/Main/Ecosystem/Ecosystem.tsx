@@ -4,13 +4,14 @@ import { Container, Grid } from "@mantine/core";
 import TradingChart from "../../../assets/img/Trading Chart.svg";
 import Tech from "../../../assets/img/tech.svg";
 import Market from "../../../assets/img/market.svg";
+import MaskGroup from "../../../assets/img/Mask Group.svg";
 
 function Ecosystem() {
   return (
     <div className="ecosystem">
       <Container size={"xl"}>
         <Grid>
-          <Grid.Col span={6}>
+          <Grid.Col span={12} xs={12} md={6}>
             <div className="ecosystem__texts">
               <h5>Экосистема</h5>
               <p>
@@ -21,9 +22,9 @@ function Ecosystem() {
               </p>
             </div>
           </Grid.Col>
-          <Grid.Col span={6}>
+          <Grid.Col span={12} xs={12} md={6}>
             <Grid>
-              <Grid.Col span={12}>
+              <Grid.Col span={12} xs={12} md={12}>
                 <Card className={"ecosystem__card-first"}>
                   <h6>SWT Wallet</h6>
                   <p>
@@ -35,9 +36,10 @@ function Ecosystem() {
                     src={TradingChart}
                     alt="Trading Chart"
                   />
+                  <img className="img-2" src={MaskGroup} alt="Mask Group" />
                 </Card>
               </Grid.Col>
-              <Grid.Col span={6}>
+              <Grid.Col span={12} xs={12} md={6}>
                 <Card className={"ecosystem__card-second"}>
                   <h6>SWT Club</h6>
                   <p>
@@ -47,7 +49,7 @@ function Ecosystem() {
                   <img className="img-1" src={Tech} alt="teach" />
                 </Card>
               </Grid.Col>
-              <Grid.Col span={6}>
+              <Grid.Col span={12} xs={12} md={6}>
                 <Card className={"ecosystem__card-third"}>
                   <h6>SWT Market</h6>
                   <p>

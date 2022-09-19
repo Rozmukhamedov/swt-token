@@ -162,4 +162,72 @@
   font-size: 10px;
   line-height: 18px;
   color: #4cc015;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .buy .buy__card {
+    background: rgba(125, 121, 121, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+  }
+  .buy .buy__card h5 {
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+
+  .buy .buy__card p {
+    color: #c6c6c6;
+    margin-bottom: 10px;
+  }
+
+  .buy .buy__texts h5 {
+    line-height: 140%;
+    color: #ffffff;
+  }
+  .buy .buy__texts p {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .buy .buy__card .buy__card-small {
+    width: 118.62px;
+    height: 77.69px;
+    background: rgba(80, 76, 76, 0.7);
+    backdrop-filter: blur(5.5495px);
+    border-radius: 16.6485px;
+  }
+  .buy .buy__card .buy__card-small img {
+    width: 22px;
+    height: 22px;
+  }
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-swt {
+    top: -2px;
+    left: 52px;
+  }
+
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-swt h6 {
+    font-size: 11.099px;
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-swt p {
+    color: #c6c6c6;
+  }
+
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-price {
+    margin-top: 10px;
+  }
+
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-price h6 {
+    color: #ffffff;
+    font-size: 9.71162px;
+  }
+
+  .buy .buy__card .buy__card-small .buy__card-position .buy__card-price p {
+    font-size: 6.93687px;
+    line-height: 12px;
+  }
 }

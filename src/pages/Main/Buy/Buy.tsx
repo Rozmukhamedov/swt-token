@@ -8,7 +8,7 @@ function Buy() {
     <div className="buy">
       <Container size={"xl"}>
         <Grid>
-          <Grid.Col span={6}>
+          <Grid.Col span={12} xs={12} md={6}>
             <div className="buy__texts">
               <h5>Как купить?</h5>
               <p>
@@ -20,7 +20,7 @@ function Buy() {
               </p>
             </div>
           </Grid.Col>
-          <Grid.Col span={6}>
+          <Grid.Col span={12} xs={12} md={6}>
             <div className="buy__card">
               <h5>Купить можно здесь</h5>
               <p>Здесь есть возможность приобрести SWT по выгодному курсу</p>
