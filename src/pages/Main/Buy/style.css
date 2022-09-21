@@ -165,7 +165,11 @@
   width: 100%;
 }
 
-@media (max-width: 720px) {
+.buy .buy__card .buy__card-img {
+  display: none;
+}
+
+@media (max-width: 576px) {
   .buy .buy__card {
     background: rgba(125, 121, 121, 0.2);
     backdrop-filter: blur(8px);
@@ -191,6 +195,10 @@
     margin-bottom: 24px;
     width: 100%;
   }
+  .buy .buy__card .buy__card-white {
+    background: none;
+  }
+
   .buy .buy__card .buy__card-small {
     width: 118.62px;
     height: 77.69px;
@@ -229,5 +237,12 @@
   .buy .buy__card .buy__card-small .buy__card-position .buy__card-price p {
     font-size: 6.93687px;
     line-height: 12px;
+  }
+  .buy .buy__card .buy__card-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
 }

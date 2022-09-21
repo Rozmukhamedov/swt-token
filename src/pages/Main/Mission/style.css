@@ -94,6 +94,7 @@
     margin-bottom: 0;
   }
   .mission .mission__text p {
+    font-size: 20px;
     margin-bottom: 16px;
   }
   .mission .mission__cards .mission__card {
@@ -115,7 +116,7 @@
   .mission .mission__cards .mission__card p {
     color: #ffffff;
     max-width: 300px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
   }
 

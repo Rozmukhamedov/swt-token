@@ -2,6 +2,7 @@ import "./style.css";
 import { Container, Grid } from "@mantine/core";
 import Button from "../../../Components/Button/Button";
 import LogoSmall from "../../../assets/img/logo_small.svg";
+import BuyBackground from "../../../assets/img/buy_background.svg";
 
 function Buy() {
   return (
@@ -39,6 +40,7 @@ function Buy() {
                   </div>
                 </div>
               </div>
+              <img className="buy__card-img" src={BuyBackground} alt="image" />
             </div>
           </Grid.Col>
         </Grid>

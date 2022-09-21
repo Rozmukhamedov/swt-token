@@ -3,6 +3,7 @@ import Ecosystem from "./Ecosystem/Ecosystem";
 import Buy from "./Buy/Buy";
 import Hero from "./Hero/Hero";
 import Mission from "./Mission/Mission";
+import Footer from "../../Components/Footer/Footer";
 
 function MainPage() {
   return (
@@ -12,6 +13,7 @@ function MainPage() {
       <Ecosystem />
       <Buy />
       <Mission />
+      <Footer />
     </>
   );
 }

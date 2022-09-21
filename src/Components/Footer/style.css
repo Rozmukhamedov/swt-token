@@ -1,0 +1,30 @@
+.footer {
+  background: #212121;
+  padding: 18px 0;
+  border-top: 1px solid #9a9aab;
+}
+
+.footer .footer__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer__flex .footer__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer__flex .footer__icons img {
+  margin: 0 10px;
+}
+
+@media (max-width: 576px) {
+  .footer .footer__flex {
+    justify-content: center;
+  }
+  .footer .footer__flex .footer__icons {
+    display: none;
+  }
+}
