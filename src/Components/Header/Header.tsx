@@ -26,7 +26,7 @@ function Header() {
               <li>Marketplace</li>
               <li>SkyProfit</li>
             </ul>
-            <Dropdown
+            {/* <Dropdown
               item={"react"}
               items={[
                 { value: "react", label: "React" },
@@ -34,7 +34,7 @@ function Header() {
                 { value: "svelte", label: "Svelte" },
                 { value: "vue", label: "Vue" },
               ]}
-            />
+            /> */}
           </div>
         </Container>
       </div>

@@ -35,6 +35,12 @@
   color: #737373;
 }
 
+@media (min-width: 768px) {
+  .inforamtion .image__mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .inforamtion {
     background: linear-gradient(

@@ -6,6 +6,7 @@ import Mission from "./Mission/Mission";
 import Footer from "../../Components/Footer/Footer";
 import Table from "../../Components/Table/Table";
 import Information from "./Information/Information";
+import Roadmap from "./Roadmap/Roadmap";
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
       <Hero />
       <Ecosystem />
       <Table />
+      <Roadmap />
       <Buy />
       <Information />
       <Mission />

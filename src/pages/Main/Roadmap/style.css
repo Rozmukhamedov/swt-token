@@ -1,0 +1,85 @@
+.roadmap {
+  margin-bottom: 40px;
+}
+
+.roadmap h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.roadmap .roadmap__column {
+  display: flex;
+  flex-direction: flex;
+}
+
+.roadmap .roadmap__column .roadmap__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap .roadmap__column .roadmap__flex button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #408be5;
+  background: none;
+  border-radius: 24px;
+  padding: 18px 62px;
+  margin: 2px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.roadmap .roadmap__column .roadmap__flex button:hover {
+  background: #343333;
+}
+
+.roadmap .roadmap__column .roadmap__flex .roadmap__btn.active {
+  background: #5b5959;
+}
+
+.roadmap .roadmap__flex-texts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.roadmap .roadmap__flex-texts button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #c6c6c6;
+  background: #343333;
+  border-radius: 24px;
+  padding: 18px 24px;
+  border: none;
+  margin: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.roadmap .roadmap__flex-texts button .circle {
+  background: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 8px; /* Also needed for space (tweak if needed) */
+  height: 8px;
+  border-radius: 50%;
+}
+
+.roadmap .roadmap__flex-texts button:hover {
+  background: #5b5959;
+}
