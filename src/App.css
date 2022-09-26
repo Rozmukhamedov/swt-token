@@ -32,9 +32,12 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -65,4 +68,8 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.App {
+  background: #212121;
 }

@@ -1,0 +1,217 @@
+.table {
+  background: #212121;
+  padding-bottom: 100px;
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    105.57deg,
+    #34619a 0%,
+    rgba(52, 97, 154, 0) 24.66%,
+    rgba(52, 97, 154, 0) 86.52%,
+    #34619a 100%
+  );
+}
+
+.table .table__texts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.table .table__texts p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  height: 73px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.table .table__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 15px 0;
+}
+
+.table .table__card:hover {
+  background: linear-gradient(
+    160.33deg,
+    #45a0e1 -42.47%,
+    rgba(12, 38, 57, 0) 81.19%
+  );
+  border-radius: 24px;
+}
+
+.table .table__card .table__card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table .table__card .table__card-img img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+.table .table__card .table__card-img p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.table .table__card .table__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table__mobile {
+  background: #212121;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.table__mobile .table__mobile-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 100px 15px 0 15px;
+  background: rgba(125, 121, 121, 0.2);
+  backdrop-filter: blur(8px);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-icons .table__mobile-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-icons .table__mobile-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-icons .table__mobile-img p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-data .table__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 160px;
+  height: 53vh;
+  width: 110vh;
+}
+
+.table__mobile .table__mobile-flex .table__mobile-data {
+  overflow-x: auto;
+  height: 52vh;
+}
+
+/* .table__mobile .table__mobile-flex .table__mobile-data ::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.table__mobile
+  .table__mobile-flex
+  .table__mobile-data
+  ::-webkit-scrollbar-thumb {
+  display: none;
+} */
+
+.table__mobile .table__mobile-flex .table__mobile-data::-webkit-scrollbar {
+  display: none;
+}
+
+.table__mobile
+  .table__mobile-flex
+  .table__mobile-data
+  .table__flex
+  .table__mobile-texts {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.table__mobile
+  .table__mobile-flex
+  .table__mobile-data
+  .table__flex
+  .table__mobile-texts
+  p {
+  width: 150px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #c6c6c6;
+  margin: 0 10px;
+}
+
+.table__mobile
+  .table__mobile-flex
+  .table__mobile-data
+  .table__flex
+  .table__mobile_td
+  p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .table__mobile {
+    display: none;
+  }
+}
