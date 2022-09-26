@@ -4,8 +4,9 @@ import { Container, Grid } from "@mantine/core";
 import Button from "../../../Components/Button/Button";
 
 function Roadmap() {
-  const [buttonActive, setButtonActive] = useState<string>("");
+  const [buttonActive, setButtonActive] = useState<string>("2021");
   const [buttonActiveQ, setButtonActiveQ] = useState<string>("");
+  const [dropdown, setDropdown] = useState<boolean>(false);
   const texts = [
     {
       text: "Прием средств с биржевых кошельков",
@@ -38,8 +39,9 @@ function Roadmap() {
           <Grid.Col span={12} xs={12} md={6}>
             <div className="roadmap__column">
               <div className="roadmap__flex">
-                {years.map((year) => (
+                {years.map((year, index) => (
                   <Button
+                    key={index}
                     className={`roadmap__btn ${
                       buttonActive == year ? "active" : null
                     }`}
@@ -62,15 +64,34 @@ function Roadmap() {
                 ))}
               </div>
             </div>
+            <div className="dropdown">
+              <p onClick={() => setDropdown(!dropdown)}>{buttonActive} год</p>
+              {dropdown ? (
+                <div className="dropdown__column">
+                  {years.map((year, index) => (
+                    <div
+                      key={index}
+                      className="dropdown__p"
+                      onClick={() => {
+                        setButtonActive(year);
+                        setDropdown(false);
+                      }}
+                    >
+                      {year} год
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </div>
           </Grid.Col>
           <Grid.Col span={12} xs={12} md={6}>
             <div className="roadmap__flex-texts">
-              {texts?.map((text) => (
-                <Button className={"roadmap__btn active"}>
+              {texts?.map((text, index) => (
+                <Button key={index} className={"roadmap__btn active"}>
                   <div
                     className="circle"
                     style={{ background: text.color }}
-                  ></div>{" "}
+                  ></div>
                   {text.text}
                 </Button>
               ))}
