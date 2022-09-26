@@ -97,7 +97,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  padding: 100px 15px 0 15px;
+  padding: 100px 15px 10px 15px;
   background: rgba(125, 121, 121, 0.2);
   backdrop-filter: blur(8px);
   border-top-left-radius: 40px;
@@ -133,13 +133,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 160px;
-  height: 53vh;
-  width: 110vh;
+  height: 75vh;
 }
 
 .table__mobile .table__mobile-flex .table__mobile-data {
   overflow-x: auto;
-  height: 52vh;
+  height: 100%;
 }
 
 /* .table__mobile .table__mobile-flex .table__mobile-data ::-webkit-scrollbar {
@@ -167,6 +166,7 @@
   display: flex;
   flex-direction: row;
   margin: 10px 0;
+  width: 121vh;
 }
 
 .table__mobile
@@ -196,7 +196,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   display: flex;
   align-items: center;

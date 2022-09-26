@@ -5,6 +5,7 @@ import Hero from "./Hero/Hero";
 import Mission from "./Mission/Mission";
 import Footer from "../../Components/Footer/Footer";
 import Table from "../../Components/Table/Table";
+import Information from "./Information/Information";
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
       <Ecosystem />
       <Table />
       <Buy />
+      <Information />
       <Mission />
       <Footer />
     </>
