@@ -59,7 +59,7 @@
 
   .inforamtion img {
     background: rgba(125, 121, 121, 0.2);
-    backdrop-filter: blur(4.875px);
+    /* backdrop-filter: blur(4.875px); */
     border-radius: 24px;
   }
 

@@ -14,10 +14,15 @@ function Buy() {
               <h5>Как купить?</h5>
               <p>
                 SWT лучше всего покупать и продавать через{" "}
-                <span>SWT Exhange</span>, но их также можно найти на Uniswap и в
-                постоянно растущем списке CEX. <br /> <br />
+                <span>
+                  <a href="http://swtexchage.com/">SWT Exhange</a>
+                </span>
+                , но их также можно найти на Uniswap и в постоянно растущем
+                списке CEX. <br /> <br />
                 Так же можно его преобрести проще через наш кошелек{" "}
-                <span>SWT Wallet</span>
+                <span>
+                  <a href="http://eveswt.com/">SWT Wallet</a>
+                </span>
               </p>
             </div>
           </Grid.Col>
@@ -25,8 +30,15 @@ function Buy() {
             <div className="buy__card">
               <h5>Купить можно здесь</h5>
               <p>Здесь есть возможность приобрести SWT по выгодному курсу</p>
-              <Button className={"buy__card-white"}>swtexchange.com</Button>
-              <Button className={"buy__card-red"}>SWT Wallet</Button>
+
+              <a href="http://swtexchage.com/">
+                <Button className={"buy__card-white"}>swtexchange.com</Button>
+              </a>
+
+              <a href="http://eveswt.com/">
+                <Button className={"buy__card-red"}>SWT Wallet</Button>
+              </a>
+
               <div className="buy__card-small">
                 <div className="buy__card-position">
                   <img src={LogoSmall} alt="logo small" />

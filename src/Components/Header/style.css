@@ -25,7 +25,7 @@
   flex-direction: flex;
 }
 
-.header .header__flex .header__menu li {
+.header .header__flex .header__menu li a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -36,9 +36,10 @@
   text-transform: capitalize;
   margin: 0 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.header .header__flex .header__menu li:hover {
+.header .header__flex .header__menu li a:hover {
   color: #408be5;
 }
 
@@ -84,7 +85,7 @@
   margin-bottom: 100%;
 }
 
-.header__menu-drawer li {
+.header__menu-drawer li a {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -95,9 +96,10 @@
   text-transform: capitalize;
   margin: 20px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.header__menu-drawer li:hover {
+.header__menu-drawer li a:hover {
   color: #408be5;
 }
 

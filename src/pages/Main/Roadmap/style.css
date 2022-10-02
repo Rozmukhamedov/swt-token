@@ -96,17 +96,21 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
-  text-align: center;
   letter-spacing: -0.5px;
   color: #408be5;
   background: #5b5959;
   border-radius: 24px;
-  padding: 18px 0;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
 }
 
 .roadmap .dropdown .dropdown__column {
   position: absolute;
-  width: 100%;
+  width: 95%;
   z-index: 1;
   background: #5b5959;
   border-radius: 24px;
@@ -119,9 +123,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
-  text-align: center;
   letter-spacing: -0.5px;
   color: #ffffff;
+  padding: 2px 20px;
 }
 
 @media (min-width: 768px) {

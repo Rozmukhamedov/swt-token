@@ -21,10 +21,18 @@ function Header() {
               <img src={LogoText} alt="logo text" />
             </div>
             <ul className="header__menu">
-              <li>Exchange</li>
-              <li>Explorer</li>
-              <li>Marketplace</li>
-              <li>SkyProfit</li>
+              <li>
+                <a href="https://eveswt.com">Exchange</a>
+              </li>
+              <li>
+                <a href="https://explorer.swttoken.com/">Explorer</a>
+              </li>
+              <li>
+                <a href="https://nftswt.com/ru/">Marketplace</a>
+              </li>
+              <li>
+                <a href="https://skyprofit.swttoken.com/">SkyProfit</a>
+              </li>
             </ul>
             {/* <Dropdown
               item={"react"}
@@ -64,10 +72,18 @@ function Header() {
           size="full"
         >
           <ul className="header__menu-drawer">
-            <li>Exchange</li>
-            <li>Explorer</li>
-            <li>Marketplace</li>
-            <li>SkyProfit</li>
+            <li>
+              <a href="https://eveswt.com">Exchange</a>
+            </li>
+            <li>
+              <a href="https://explorer.swttoken.com/">Explorer</a>
+            </li>
+            <li>
+              <a href="https://nftswt.com/ru/">Marketplace</a>
+            </li>
+            <li>
+              <a href="https://skyprofit.swttoken.com/">SkyProfit</a>
+            </li>
           </ul>
           <div className="header__menu-footer">
             <img src={LogoFooter} alt="Лого" />

@@ -2,11 +2,14 @@ import "./style.css";
 import { useState } from "react";
 import { Container, Grid } from "@mantine/core";
 import Button from "../../../Components/Button/Button";
+import { ReactComponent as Shape } from "../../../assets/img/Shape.svg";
 
 function Roadmap() {
   const [buttonActive, setButtonActive] = useState<string>("2021");
+  const [buttonQActive, setButtonQActive] = useState<string>("Q1");
   const [buttonActiveQ, setButtonActiveQ] = useState<string>("");
   const [dropdown, setDropdown] = useState<boolean>(false);
+  const [dropdownQ, setDropdownQ] = useState<boolean>(false);
   const texts = [
     {
       text: "Прием средств с биржевых кошельков",
@@ -54,6 +57,7 @@ function Roadmap() {
               <div className="roadmap__flex">
                 {codeQS.map((codeQ) => (
                   <Button
+                    key={codeQ}
                     className={`roadmap__btn ${
                       buttonActiveQ == codeQ ? "active" : null
                     }`}
@@ -64,24 +68,50 @@ function Roadmap() {
                 ))}
               </div>
             </div>
-            <div className="dropdown">
-              <p onClick={() => setDropdown(!dropdown)}>{buttonActive} год</p>
-              {dropdown ? (
-                <div className="dropdown__column">
-                  {years.map((year, index) => (
-                    <div
-                      key={index}
-                      className="dropdown__p"
-                      onClick={() => {
-                        setButtonActive(year);
-                        setDropdown(false);
-                      }}
-                    >
-                      {year} год
-                    </div>
-                  ))}
-                </div>
-              ) : null}
+            <div style={{ display: "flex" }}>
+              <div className="dropdown">
+                <p onClick={() => setDropdown(!dropdown)}>
+                  <span>{buttonActive} год</span> <Shape />
+                </p>
+                {dropdown ? (
+                  <div className="dropdown__column">
+                    {years.map((year, index) => (
+                      <div
+                        key={index}
+                        className="dropdown__p"
+                        onClick={() => {
+                          setButtonActive(year);
+                          setDropdown(false);
+                        }}
+                      >
+                        {year} год
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+              <div className="dropdown">
+                <p onClick={() => setDropdownQ(!dropdown)}>
+                  <span>{buttonQActive}</span>
+                  <Shape />
+                </p>
+                {dropdownQ ? (
+                  <div className="dropdown__column">
+                    {codeQS.map((codeQ, index) => (
+                      <div
+                        key={index}
+                        className="dropdown__p"
+                        onClick={() => {
+                          setButtonQActive(codeQ);
+                          setDropdownQ(false);
+                        }}
+                      >
+                        {codeQ}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             </div>
           </Grid.Col>
           <Grid.Col span={12} xs={12} md={6}>

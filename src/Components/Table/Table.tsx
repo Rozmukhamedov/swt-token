@@ -49,7 +49,7 @@ function Table() {
             <Grid.Col span={12} xs={3} md={3}>
               <div className="table__texts" style={{ padding: "15px 0" }}>
                 {data.map((item) => (
-                  <p>{item}</p>
+                  <p key={item}>{item}</p>
                 ))}
               </div>
             </Grid.Col>
@@ -60,8 +60,8 @@ function Table() {
                   <p>SWT</p>
                 </div>
                 <div className="table__texts">
-                  {swtData.map((data) => (
-                    <p>{data}</p>
+                  {swtData.map((data, index) => (
+                    <p key={index + 100}>{data}</p>
                   ))}
                 </div>
               </div>
@@ -74,7 +74,7 @@ function Table() {
                 </div>
                 <div className="table__texts">
                   {etheriumData.map((data) => (
-                    <p>{data}</p>
+                    <p key={data}>{data}</p>
                   ))}
                 </div>
               </div>
@@ -86,8 +86,8 @@ function Table() {
                   <p>Binance</p>
                 </div>
                 <div className="table__texts">
-                  {binanceData.map((data) => (
-                    <p>{data}</p>
+                  {binanceData.map((data, index) => (
+                    <p key={index}>{data}</p>
                   ))}
                 </div>
               </div>
@@ -115,23 +115,23 @@ function Table() {
             <div className="table__mobile-data">
               <div className="table__flex">
                 <div className="table__mobile-texts table__mobile_td">
-                  {data.map((item) => (
-                    <p>{item}</p>
+                  {data.map((item, index) => (
+                    <p key={index + 50}>{item}</p>
                   ))}
                 </div>
                 <div className="table__mobile-texts">
-                  {swtData.map((data) => (
-                    <p>{data}</p>
+                  {swtData.map((data, index) => (
+                    <p key={index + 60}>{data}</p>
                   ))}
                 </div>
                 <div className="table__mobile-texts">
-                  {swtData.map((data) => (
-                    <p>{data}</p>
+                  {swtData.map((data, index) => (
+                    <p key={index + 70}>{data}</p>
                   ))}
                 </div>
                 <div className="table__mobile-texts">
-                  {swtData.map((data) => (
-                    <p>{data}</p>
+                  {swtData.map((data, index) => (
+                    <p key={index + 80}>{data}</p>
                   ))}
                 </div>
               </div>
